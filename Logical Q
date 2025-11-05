@@ -15,3 +15,14 @@ for (let arr = 0; arr < nestedArr.length; arr++) {
 }
 
 console.log(max);
+
+// Fibonacci sequence up to a given number
+
+let num = 10;
+let a = [0, 1];
+
+for (let i = 1; i < num - 1; i++) {
+a.push(a[i]+a[i-1])
+}
+
+console.log(a);
