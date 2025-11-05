@@ -1,0 +1,17 @@
+// NestArray biggest number
+let nestedArr = [
+  [12, 2, 3, 45],
+  [2, 22, 35, 85],
+  [2, 22, 35, 95],
+  [2222, 82, 35, 95],
+];
+let max = -Infinity;
+for (let arr = 0; arr < nestedArr.length; arr++) {
+  for (let i = 0; i < nestedArr[arr].length; i++) {
+    if (max < nestedArr[arr][i]) {
+      max = nestedArr[arr][i];
+    }
+  }
+}
+
+console.log(max);
